@@ -39,7 +39,7 @@ html {
 }
 .header--item, .footer--item {
     flex-basis: 250px;
-    font-size: 2rem;
+    font-size: 3rem;
 }
 .footer--item {
     flex-basis: 150px;
