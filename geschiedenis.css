@@ -22,6 +22,7 @@ html {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 2.5rem;
+    background-image:"ajax logo.jpg" ;
 }
 .container {                
     display: grid;
@@ -39,10 +40,12 @@ html {
 }
 .header--item, .footer--item {
     flex-basis: 250px;
-    font-size: 2rem;
+    font-size: 3rem;
+    font-family: cursive;
 }
 .footer--item {
     flex-basis: 150px;
+   
     }
 
 .main {
@@ -70,6 +73,6 @@ img{
 }
 p{
   font-size: 20px;
-  font-family: sans-serif;
-  color: red;
+  font-family: cursive;
+  color: black;
 }
