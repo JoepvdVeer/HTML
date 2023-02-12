@@ -22,7 +22,15 @@ html {
     display: grid;
     grid-template-columns: 1fr;
     grid-row-gap: 2.5rem;
-    background-image:"ajax logo.jpg" ;
+    background: linear-gradient(
+      to right,
+      white 0%,
+      white 33%,
+      red 33%,
+      red 66%,
+      white 66%,
+      white 100%
+     );
 }
 .container {                
     display: grid;
