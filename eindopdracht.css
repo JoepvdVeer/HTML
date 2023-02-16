@@ -52,8 +52,9 @@ html {
     font-family: cursive;
     color: red;
 }
+
 .footer--item {
-    flex-basis: 150px;
+  text-align: center;
 }
 
 .main {
@@ -75,4 +76,12 @@ html {
 }
 .image--right {
     grid-column: 3 / 4;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 150px;
+  background-color: blue;
+  
 }
