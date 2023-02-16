@@ -46,11 +46,16 @@ html {
     flex-basis: 250px;
     font-size: 3rem;
     font-family: cursive;
+    color: gold;
 }
 .footer--item {
     flex-basis: 150px;
-   
+    text-align: center;
     }
+.header--item{
+    flex-basis: 150px;
+    text-align: center;
+}
 
 .main {
     display: grid;
@@ -87,4 +92,14 @@ h1{
 }
 .text{
   text-align: center;
+}
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 150px;
+  background-color: black;
+  position:absolute;
+  width: 100%;
+  bottom: 0px;
 }

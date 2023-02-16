@@ -1,70 +1,91 @@
 *::before, *, *::after {
-    padding: 0;
-    margin: 0;
-    box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
 } 
 html {
-    box-sizing: border-box;
-    font-size: 62.5%; /* meestal 10px */
-    font-family: monospace;
-    font-weight: 300;
-    line-height: 1.6;
-    letter-spacing: 0.1rem;
-    word-spacing: 0.2rem;
+  box-sizing: border-box;
+  font-size: 62.5%; /* meestal 10px */
+  font-family: monospace;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
 
 }
 .body {
-    /*min-height: 100vh;*/
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 2.5rem;
+  /*min-height: 100vh;*/
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2.5rem;
+  background: linear-gradient(
+    to right,
+    white 0%,
+    white 33%,
+    red 33%,
+    red 66%,
+    white 66%,
+    white 100%
+   );
 }
 .container {                
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 
-    font-size: 3rem;
-    border: .3rem solid black;
+  font-size: 3rem;
+  border: .3rem solid black;
 }
 
 .header, .footer {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 
 }
 .header--item, .footer--item {
-    flex-basis: 250px;
-    font-size: 3rem;
-    font-family: cursive;
+  flex-basis: 250px;
+  font-size: 3rem;
+  font-family: cursive;
+  color: gold;
+}
+.header--item{
+  flex-basis: 150px;
+text-align: center;
 }
 .footer--item {
-    flex-basis: 150px;
+  flex-basis: 150px;
+  text-align: center;
 }
-
+.footer{
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+flex-basis: 150px;
+background-color: black;
+position:absolute;
+width: 100%;
+bottom: 0px;
+}
 .main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-template-rows: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: repeat(3, 1fr);
 }
 .main--item {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
-.image--left, .image--right {
-    grid-row-start: 1;
-    grid-row-end: 4;
-}
+
 .image--left {
-    grid-column-start: 1;
-    grid-column-end: 2;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 .image--right {
-    grid-column: 3 / 4;
+  grid-column: 3 / 4;
 }
 .image--gallery{
-  grid-column: 1 / 4;
+grid-column: 1 / 4;
 }
 img{
-  width: 300px;
+width: 300px;
 }
