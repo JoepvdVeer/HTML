@@ -50,10 +50,12 @@ html {
 }
 
 .header--item{
+  flex-basis: 150px;
   text-align: center;
 }
 
 .footer--item {
+  flex-basis: 150px;
   text-align: center;
 }
 
@@ -96,7 +98,4 @@ p{
   font-size: 25px;
   font-family: cursive;
   text-align: center;
-}
-.button{
-  color: yellow;
 }
