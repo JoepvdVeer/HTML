@@ -50,12 +50,10 @@ html {
 }
 
 .header--item{
-  flex-basis: 150px;
   text-align: center;
 }
 
 .footer--item {
-  flex-basis: 150px;
   text-align: center;
 }
 
@@ -71,7 +69,6 @@ html {
 .image--left, .image--right {
     grid-row-start: 1;
     grid-row-end: 4;
-    text-align: center;
 }
 .image--left {
     grid-column-start: 1;
@@ -94,11 +91,12 @@ h1{
   font-size: 50px;
   font-family: cursive;
   text-align: center;
-  color: gold;
 }
 p{
   font-size: 25px;
   font-family: cursive;
   text-align: center;
-  color: gold;
+}
+.button{
+  color: yellow;
 }
