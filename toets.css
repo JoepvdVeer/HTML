@@ -1,0 +1,154 @@
+nav {
+  background-color: #333; /* change the background color of the navbar */
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.nav-container a {
+  display: block;
+  width: calc(100% / 6);
+  text-align: center;
+  color: #fff; /* change the color of the link text */
+  padding: 10px;
+  box-sizing: border-box;
+  
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-container {
+    flex-direction: column;
+    max-width: 768px;
+  }
+
+  .nav-container a {
+    width: calc(100% / 3);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-container a {
+    width: calc(100% / 5);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-container a {
+    width: 100%;
+  }
+}
+
+
+
+
+*::before, *, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+} 
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* meestal 10px */
+  font-family: monospace;
+  font-weight: 300;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.2rem;
+
+}
+.body {
+  /*min-height: 100vh;*/
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 2.5rem;
+  background: linear-gradient(
+    to right,
+    white 0%,
+    white 33%,
+    red 33%,
+    red 66%,
+    white 66%,
+    white 100%
+   );
+}
+.container {                
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+  font-size: 3rem;
+  border: .3rem solid black;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+}
+.header--item, .footer--item {
+  flex-basis: 250px;
+  font-size: 3rem;
+  font-family: cursive;
+  color: gold;
+}
+
+.header--item{
+flex-basis: 150px;
+text-align: center;
+}
+
+.footer--item {
+flex-basis: 150px;
+text-align: center;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  grid-template-rows: repeat(3, 1fr);
+}
+.main--item {
+  font-size: 5rem;
+}
+
+.image--left, .image--right {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  text-align: center;
+}
+.image--left {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+.image--right {
+  grid-column: 3 / 4;
+}
+.footer {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+flex-basis: 150px;
+background-color: black;
+position:absolute;
+width: 100%;
+bottom: 0px;
+}
+h1{
+font-size: 50px;
+font-family: cursive;
+text-align: center;
+color: black;
+}
+p{
+font-size: 25px;
+font-family: cursive;
+text-align: center;
+color: black;
+}
